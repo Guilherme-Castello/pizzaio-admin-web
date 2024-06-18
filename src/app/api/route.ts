@@ -59,4 +59,21 @@ export async function PUT(req: NextRequest) {
   }
 }
 
+export async function DELETE(req: NextRequest) {
+  try {
+    const { id } = await req.json(); // Espera receber o ID da pizza a ser deletada
+    if (!id) {
+      return NextResponse.json({ error: "Missing ID parameter" }, { status: 400 });
+    }
+
+    const deletedPizza = await prisma.pizza.delete({
+      where: { id },
+    });
+
+    return NextResponse.json(deletedPizza, { status: 200 });
+  } catch (error) {
+    console.error('Error deleting pizza:', error);
+    return NextResponse.json({ error: "Error deleting pizza" }, { status: 500 });
+  }
+}
 

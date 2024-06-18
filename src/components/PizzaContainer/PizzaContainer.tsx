@@ -12,7 +12,6 @@ interface IPizzaContainer {
 
 export default function PizzaContainer({ pizza }: IPizzaContainer) {
   const router = useRouter();
-  console.log(pizza)
   return (
     <div
       className="bg-yellow-400/50 w-full h-20 px-5 flex justify-between"
