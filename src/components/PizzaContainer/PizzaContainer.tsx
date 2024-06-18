@@ -26,7 +26,7 @@ export default function PizzaContainer({ pizza }: IPizzaContainer) {
         </div>
       </div>
       <div className="w-[20%] justify-center items-center flex gap-4">
-        <Button extraClasses="!bg-blue-700">Edit</Button>
+        <Button extraclasses="!bg-blue-700">Edit</Button>
         <Button>Delete</Button>
       </div>
     </div>

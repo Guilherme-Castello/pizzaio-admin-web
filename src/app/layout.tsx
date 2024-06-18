@@ -21,9 +21,9 @@ export default function RootLayout({
       <body>
         <Nav/>
         <section className="bg-yellow-500/50 h-10 w-full flex items-center justify-center px-5 shadow-lg gap-5">
-          <Button extraClasses="!py-1">Create Pizza</Button>
-          <Button extraClasses="!py-1">Manage Orders</Button>
-          <Button extraClasses="!py-1">Admin Settings</Button>
+          <Button extraclasses="!py-1">Create Pizza</Button>
+          <Button extraclasses="!py-1">Manage Orders</Button>
+          <Button extraclasses="!py-1">Admin Settings</Button>
         </section>
         {children}
       </body>
