@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Button from '@/components/Button/Button';
 import Input from '@/components/Input/Input';
 import PizzaioBlock from '@/components/PizzaioBlock/PizzaioBlock';
-import { useRouter } from 'next/navigation'; // Alterado para 'next/navigation'
+import { useRouter } from 'next/navigation';
 
 export default function CreatePizza() {
   const router = useRouter();
